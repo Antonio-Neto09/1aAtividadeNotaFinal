@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+ <html lang="pt-BR">
+ <head>
+    <meta charset="UTF-8">
+    <meta http-equiv=" X-UA-Compatible" content= "IE=edge">
+    <meta name="viewport" content="width=device-width, inicial-scale=1.0">
+    <title>Calculadora IMC</title>
+    <link rel="stylesheet" href="style.css">
+ </head>
+ <body>
+    <section>
+        <h2>Cálculo IMC</h2>
+        <div class="divAltura">
+            <label for="altura"> Altura (M)</label>
+            <input type="numero" id="altura"/>
+        </div>
+        <div class="divPeso">
+            <label for="peso"> Peso (KG)</label>
+            <input type="numero" id="peso"/>
+        </div>
+        <div class="divCalc">
+            <button onclick="calcIMC()">Calcular IMC</button>
+        </div>
+        <span id="resultado"></span>
+    </section>
+
+    <script>
+        const resultado = document.querySelector('#resultado');
+        const altura = document.querySelector('#altura');
+        const dpeso = document.querySelector('#peso');
+
+
+        const calcIMC = () => {
+            if (altura.value != '' && peso.value != '') {
+                const imc = (peso.value/ (altura.value * altura.value)).toFixed(2)
+            
+            let classification =''
+            
+
+            if(imc <18.5) {
+                classification = 'Abaixo do peso'
+            }
+        
+            else if (imc < 25) {
+                classification = 'Peso normal'
+            }
+
+
+            else if (imc <30) {
+            
+                classification = 'Peso normal'
+            }
+            else if (imc <35) {
+                classification = 'Obesidade grau I'
+            }
+
+            else if (imc <41) {
+                classification = 'Obesidade grau II'
+            } 
+            else {
+                classification = 'Obesidade grau III'
+            }
+
+             resultado.innerHTML =  `IMC: ${imc} (${classification})`;
+        }   else {
+                resultado.innerHTML = 'Preencha os campos'
+            
+        }    
+    }
+
+    </script>
+
+   <style.css>
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    width: 100vh;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:rgb(240, 254, 255);
+    color: #f5f5f5;
+}
+
+ section {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background: rgb(144, 140, 140);
+    gap:20px;
+    width: 500px;
+    height: 500px;
+
+}
+
+
+.divAltura, .divPeso, .divCalc {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+
+}
+
+input,button {
+    padding: 10px;
+    font-size: 20px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+}
+
+button {
+    cursor: pointer;
+    background-color: #6f00ff;
+    color: white;
+
+}
+
+
+
+
+</style.css>
