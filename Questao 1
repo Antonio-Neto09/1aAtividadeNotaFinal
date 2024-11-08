@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+ <html lang="pt-BR">
+ <head>
+    <meta charset="UTF-8">
+    <meta http-equiv=" X-UA-Compatible" contet= "IE=edge">
+    <meta name="viewport" contet=" width=device-width, inicial-scale=1.0">
+    <title> Antonio Honorato Da Silva Neto</title>
+    <link rel="stylesheet" href="styles.css">
+ </head>
+ <body>
+    <div class=" container">
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">Sobre mim</a>
+                </li>
+            </ul>
+        </nav>
+        <header>
+            <div class="center">
+                <img src="./img/Antonio Neto.png"></img>
+            </div>
+            <h1> Antonio Honorato Da Silva Neto</h1>
+            <h2>Matrícula: 202403686481</h2>
+        
+            <h2> Ciências Da Computação</h2>
+        </header>
+    
+        <main>
+        <section>
+            <h3> </h3>
+            <p>
+            Atualmente estou cursando ciências da computação, na universidade estácio, no qual eu estudo as seguintes matérias: Desenvolvimento Web, paradigmas em Python, software básico em C e pensamento computacional. 
+            </p>
+        </section>
+        <section>
+            <h3>Objetivo</h3>
+            <p> 
+                Atuar como desenvolvedor de software ou perito da policia federal
+            </p>
+        </section>
+        </main>
+        <footer>
+            <a href=" https://github.com/Antonio-Neto09" target=" _blank" rel=" noopener noreferrer">
+            <img src="./img/github.svg"> </img> 
+            <p>GitHub</p>
+            </a>
+            <a href="http://linkedin.com/in/antonio-neto-1222012b9" target=" _blank" rel=" noopener noreferrer">
+                <img src="./img/linkedin.svg"> </img> 
+                <p>Linkedin</p>
+                </a>
+        </footer>
+    </div>
+         
+</body>
+</html>
+
+
+<styles>
+
+body {
+    color: white;
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+ }
+
+ 
+ ul {
+    display: flex; 
+    justify-content: space-between;
+    list-style-type: none;
+    padding: 16px;
+ }
+
+ a { 
+   color: white;
+   text-decoration: none;
+ }
+
+ header img { 
+
+   width: 150px;
+   height: 150px;
+   border-radius: 50%;
+   border: 5px solid #5bbe42;
+
+ }
+
+
+
+ .center{
+   text-align: center;
+ }
+
+ h1 { 
+  
+   color: #5bbe42
+ }
+
+
+ footer img {
+   width: 40x;
+   height: 40px;
+ }
+ footer { 
+  display: flex;
+  justify-content: center;
+
+}
+
+footer a {
+margin: 15px;
+text-align: center;
+
+}
+
+footer p { 
+  margin-top: 2px;
+
+
+}
+
+.container {
+padding: 0px 50px;
+
+}
+
+</styles>
+
+
+img:
+
+
